@@ -50,7 +50,6 @@ def run_always():
             
             if appointment_found:
                 raise Exception("Appointment found, stopping program.")
-
             
             wait_time = random.randint(180, 300) # CAREFUL: do not fetch too often, otherwise you get blocked
             print('Waiting {} seconds...'.format(wait_time))
